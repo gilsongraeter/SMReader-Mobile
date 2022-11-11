@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="false"
+    android:orientation="horizontal"
+    app:layout_constrainedWidth="false"
+    tools:context="com.starmeasure.absoluto.ConfiguracaoMedidor">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/linearLayout3"
+        style="@style/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundGray"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo_configuracao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal|start"
+                android:textColor="@android:color/white"
+                android:textSize="34sp"
+                android:visibility="visible"
+                android:text="Configuração"
+                app:layout_constraintEnd_toStartOf="@+id/voltar_tela"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/voltar_tela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/transparent"
+                android:src="@drawable/close_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvPerguntaConfiguracao"
+        android:layout_width="231dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Selecione o tipo de ligação do medidor:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Spinner
+        android:id="@+id/spinner_tipo_ligacao"
+        android:layout_width="143dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toTopOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS1"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S01"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS2"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S02"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS3"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S03"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS4"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S04"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS5"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S05"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS6"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S06"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS7"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="336dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S07"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS8"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S08"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS9"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S09"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS10"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="504dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S10"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS11"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S11"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS12"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="616dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S12"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0102"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0102"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0203"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0203"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0304"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0304"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0405"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0405"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0506"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0506"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0607"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0607"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0708"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="336dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0708"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0809"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0809"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS0910"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S0910"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS1011"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="504dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S1011"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS1112"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S1112"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS010203"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S010203"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS020304"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S020304"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS030405"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S030405"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS040506"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S040506"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS050607"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="224dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S050607"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS060708"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S060708"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS070809"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="336dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S070809"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS080910"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="392dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S080910"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS091011"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="448dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S091011"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnS101112"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="504dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="S101112"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <Button
+        android:id="@+id/btnSH1"
+        android:layout_width="120dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:enabled="true"
+        android:text="SH1"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConfiguracao" />
+
+    <EditText
+        android:id="@+id/etNumeroUC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:width="96dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="number"
+        android:maxLength="8"
+        android:minHeight="48dp"
+        android:numeric="signed"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/etNumeroMedidor"
+        app:layout_constraintStart_toEndOf="@+id/tvUC"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroMedidor" />
+
+    <EditText
+        android:id="@+id/etNumeroMedidor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:width="96dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:minHeight="48dp"
+        android:numeric="signed"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tvMedidorConfig"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_tipo_ligacao" />
+
+    <TextView
+        android:id="@+id/tvUC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="16dp"
+        android:text="UC"
+        android:textColor="#00868E"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/etNumeroUC"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao" />
+
+    <TextView
+        android:id="@+id/tvMedidorConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="16dp"
+        android:text="Medidor"
+        android:textColor="#00868E"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/etNumeroMedidor"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao" />
+
+    <EditText
+        android:id="@+id/etNumeroIU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:width="96dp"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="number"
+        android:maxLength="8"
+        android:minHeight="48dp"
+        android:numeric="signed"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/etNumeroUC"
+        app:layout_constraintStart_toEndOf="@+id/tvIU"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroUC" />
+
+    <TextView
+        android:id="@+id/tvIU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="16dp"
+        android:text="IU Rádio"
+        android:textColor="#00868E"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/etNumeroIU"
+        app:layout_constraintStart_toStartOf="@+id/tvPerguntaConfiguracao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
